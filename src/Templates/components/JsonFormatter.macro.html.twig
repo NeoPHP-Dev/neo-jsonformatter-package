@@ -1,0 +1,23 @@
+{#
+    Reusable JSON formatter component — format, minify, validate.
+    Entirely client-side.
+
+    Usage:
+    {% import '@JsonFormatter/components/JsonFormatter.macro.html.twig' as JsonFormatter %}
+    {{ JsonFormatter.render() }}
+#}
+{% macro render(instanceId = 'jf') %}
+    <div class="jf-layout" id="{{ instanceId }}-root">
+        <div class="jf-toolbar">
+            <button type="button" class="jf-format-btn">Format</button>
+            <button type="button" class="jf-minify-btn">Minify</button>
+            <button type="button" class="jf-clear-btn">Clear</button>
+            <span class="jf-status"></span>
+            <span class="jf-size"></span>
+        </div>
+
+        <textarea class="jf-input" rows="14" placeholder='{"paste": "your JSON here"}'></textarea>
+
+        <p class="jf-error" hidden></p>
+    </div>
+{% endmacro %}
