@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Vendor\NeoPHP\SkeletonPackage;
+namespace Vendor\NeoPHP\JsonFormatterPackage;
 
 use Neo\Core\Package\Abstract\AbstractPackage;
 
-final class NeoSkeletonPackage extends AbstractPackage
+final class NeoJsonFormatterPackage extends AbstractPackage
 {
     public function getName(): string
     {
-        return 'Skeleton';
+        return 'JsonFormatter';
     }
 
     public function getPath(): string
