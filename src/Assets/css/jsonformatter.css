@@ -1,0 +1,79 @@
+.jf-layout {
+    --jf-bg: #ffffff;
+    --jf-bg-alt: #f9fafb;
+    --jf-border: #e5e7eb;
+    --jf-text: #16181d;
+    --jf-text-muted: #6b7280;
+    --jf-accent: #5b5fef;
+    --jf-danger: #e5484d;
+    --jf-success: #16a34a;
+
+    max-width: 760px;
+    font-family: inherit;
+    color: var(--jf-text);
+}
+
+.jf-layout * { box-sizing: border-box; }
+
+.jf-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.jf-format-btn, .jf-minify-btn, .jf-clear-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--jf-border);
+    border-radius: 8px;
+    background: var(--jf-bg);
+    font-size: 0.82rem;
+    cursor: pointer;
+}
+
+.jf-format-btn {
+    background: var(--jf-accent);
+    color: #ffffff;
+    border-color: var(--jf-accent);
+}
+
+.jf-minify-btn:hover, .jf-clear-btn:hover { border-color: var(--jf-accent); }
+
+.jf-status {
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.jf-status-ok { color: var(--jf-success); }
+
+.jf-size {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--jf-text-muted);
+    font-family: monospace;
+}
+
+.jf-input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--jf-border);
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.83rem;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    background: var(--jf-bg-alt);
+    color: var(--jf-text);
+}
+
+.jf-input:focus { border-color: var(--jf-accent); }
+
+.jf-error {
+    color: var(--jf-danger);
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    background: rgba(229, 72, 77, 0.08);
+    border-radius: 6px;
+}
