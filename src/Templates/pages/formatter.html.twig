@@ -1,0 +1,15 @@
+{# @JsonFormatter/pages/formatter.html.twig #}
+{% import '@JsonFormatter/components/JsonFormatter.macro.html.twig' as JsonFormatter %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NeoPHP JSON Formatter</title>
+    <link rel="stylesheet" href="/packages-assets/JsonFormatter/css/jsonformatter.css">
+</head>
+<body style="font-family: -apple-system, sans-serif; margin: 3rem auto; max-width: 820px;">
+<h1>JSON Formatter</h1>
+{{ JsonFormatter.render() }}
+<script src="/packages-assets/JsonFormatter/js/jsonformatter.js"></script>
+</body>
+</html>
