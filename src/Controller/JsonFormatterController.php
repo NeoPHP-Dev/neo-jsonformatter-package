@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vendor\NeoPHP\JsonFormatterPackage\Controllers;
+namespace Vendor\NeoPHP\JsonFormatterPackage\Controller;
 
 use Neo\Core\Controller\AbstractController;
 use Neo\Core\Http\Response\Types\Response;

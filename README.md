@@ -16,7 +16,7 @@ jsonformatter-package/
     ├── NeoJsonFormatterPackage.php
     ├── Middleware/
     │   └── DevOnlyMiddleware.php
-    ├── Controllers/
+    ├── Controller/
     │   └── JsonFormatterController.php
     ├── Assets/
     │   ├── css/jsonformatter.css
